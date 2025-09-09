@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form>
+     <input id="name" type="text" placeholder="enter your name">
+     <br><br>
+     <input id="pass" type="text" placeholder="enter your password">
+     <br><br>
+     <input type="submit" value="signup">
+
+    </form>
+    <br><br><hr><br>
+
+    <div id="main"></div>
+</body>
+ <script>
+let name = document.getElementById("name")
+let pass = document.getElementById("pass")
+let form = document.querySelector("form")
+let main = document.querySelector("main")
+let arr = [];
+form.addEventListener("submit",getData)
+
+function getData(){
+    event.preventDefault()
+
+    let obj = {
+        name:name.value,
+        pass:pass.value
+    }
+
+    arr.push(obj)
+}
+
+
+
+
+
+
+ </script>
+
+
+
+
+</html>
