@@ -1,66 +1,65 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo-app</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-   
-    <h1> employe Records</h1>
-
-    <div>
-     
-      <form>
-        <label>Employe Name</label><br />
-        <input required id="empname" type="text" placeholder="Enter employe Name" /><br />
-        <label>Doctor Id</label><br />
-        <input required id="empid" type="text" placeholder="Enter employe Id" /><br />
-        <label>department</label><br />
-        <input
-          id="dep"
-          type="text"
-          placeholder="Enter employe department"
-        /><br />
-        <label>Experience in year</label><br />
-        <input
-          id="exp"
-          type="text"
-          placeholder="Enter Employe Experience in year"
-        /><br />
-        <label>Email</label><br />
-        <input id="email" type="email" placeholder="Enter Employe Email" /><br />
-        <label>Mobile</label><br />
-        <input
-          id="mbl"
-          type="number"
-          placeholder="Enter Employe Mobile no"
-        /><br />
-        <input type="submit" />
-      </form>
-
-      <table>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Record</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+   <h1>Hospital - Doctor Records</h1>
+   <div>
+    <form action="">
+        <label  for="">Doctor Name </label>
+        <input id="name" type="text" placeholder="Enter your name">
+        <label for="">Doctor ID</label>
+        <input id="id" type="text" placeholder="Enter your ID">
+        <label for="">Specialization</label>
+      <select name="" id="specialization">
+        <option value="">Specialization</option>
+        <option value="">ENT</option>
+        <option value="">Dentist</option>
+        <option value="">Gynocologist</option>
+        <option value="">COVID</option>
+      </select>
+        <label for="">Experience</label>
+        <input id="experience" type="text" placeholder="Enter Experinece in the year">
+        <label for="">Email</label>
+        <input  id="email" type="" placeholder="Enter your email">
+        <br><br>
+        <label for="">Mobile Number</label>
+        <input id="mobile" type="number" placeholder="Enter Mobile no.">
+          <br><br>
+        <label for="">Role</label>
+        <input id="role" type="text" placeholder="Enter Role">
+        <br><br><br>
+        <input type="submit" >
+    </form>
+    <table>
         <thead>
-          <tr>
-            <th>emp Name</th>
-            <th>Employe Id</th>
-            <th>department</th>
-            <th>Experience</th>
-            <th>Email</th>
-            <th>Mobile</th>
-            <th>Role</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>
-    </div>
-  </body>
-</html>
+            <tr>
+                <th>Name</th>
+                <th>Docter Id</th>
+                <th>Specialization</th>
+                <th>Experience in the year</th>
+                <th>Email Address</th>
+                <th>Mobile No.</th>
+                <th>Role</th>
+                <th>Delete</th>
+               
+            </tr>
 
+        </thead>
+
+        <tbody>
+            <!-- append your output in the tbody -->
+        </tbody>
+
+
+
+
+
+    </table>
+   </div>
+</body>
 <script src="./index.js"></script>
+</html>
